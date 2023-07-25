@@ -7,7 +7,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/utibeabasi6/argocd-config
+    repoURL: https://github.com/maheshglm/argocd-config
     targetRevision: HEAD
     path: "demo"
   destination:
