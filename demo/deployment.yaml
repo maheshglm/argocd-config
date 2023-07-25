@@ -13,13 +13,13 @@ spec:
     spec:
       containers:
       - name: argocd-app
-        image: utibeabasi6/argocd-code:v1.0.8
+        image: nginx:latest
         resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
         ports:
-        - containerPort: 5000
+        - containerPort: 80
 
 ---
 
@@ -32,4 +32,4 @@ spec:
     app: argocd-app
   ports:
   - port: 80
-    targetPort: 5000
+    targetPort: 80
